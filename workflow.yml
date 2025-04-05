@@ -1,0 +1,28 @@
+name: Docker CI/CD Pipeline
+
+on: [push]  # Runs on every git push
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Checkout code
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. Login to AWS ECR
+      - name: AWS ECR Login
+        uses: aws-actions/amazon-ecr-login@v1
+
+      # 3. Build Docker image
+      - name: Build Docker Image
+        run: docker build -t my-flask-app .
+
+      # 4. Tag and Push to AWS ECR
+      - name: Push to ECR
+        env:
+          ECR_REGISTRY: ${{ secrets.ECR_REGISTRY }}
+          ECR_REPOSITORY: my-flask-app
+        run: |
+          docker tag my-flask-app:latest $ECR_REGISTRY/$ECR_REPOSITORY:latest
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
