@@ -1,0 +1,33 @@
+     docker push 730335514161.dkr.ecr.ap-south-2.amazonaws.com/my-flask-app:latest
+     docker tag my-flask-app:latest 730335514161.dkr.ecr.ap-south-2.amazonaws.com/my-flask-app:latest
+     docker push 730335514161.dkr.ecr.ap-south-2.amazonaws.com/my-flask-app:latest
+     aws ecr get-login-password --region ap-south-2 | docker login --johrabanu AWS --password-stdin 730335514161.dkr.ecr.ap-south-2.amazonaws.com
+     apt update && apt install -y awscli
+     aws --version
+   82  apt install awscli
+   83  apt update -y
+   84  apt update && apt upgrade -y
+   85  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+   86  unzip awscliv2.zip
+   87  sudo ./aws/install
+   88  apt update && apt install -y unzip
+   89  cd /
+   90  unzip awscliv2.zip
+   91  aws ecr get-login-password --region ap-south-2 | docker login --username AWS --password-stdin 730335514161.dkr.ecr.ap-south-2.amazonaws.com
+   92  apt update && apt install -y awscli
+   93  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+   94  unzip awscliv2.zip
+   95  sudo ./aws/install
+   96  aws --version
+   97  aws configure
+   98  aws ecr get-login-password --region ap-south-2 | docker login --username AWS --password-stdin 730335514161.dkr.ecr.ap-south-2.amazonaws.com
+   99  docker build -t my-flask-app .
+  100  docker tag my-flask-app:latest 730335514161.dkr.ecr.ap-south-2.amazonaws.com/my-flask-app:latest
+  101  docker push 730335514161.dkr.ecr.ap-south-2.amazonaws.com/my-flask-app:latest
+  102  docker pull 730335514161.dkr.ecr.ap-south-2.amazonaws.com/my-flask-app:latest
+  103  aws ecr get-login-password --region ap-south-2
+  104  docker login -u AWS -p eyJwYXlsb2FkIjoiUDlvallXQjJOd1pHSzFZQTZwVHUxRDA3bk02cXVhLzVPVUsyQW9MVnVYRStRNHgxcllSU1V2TGdkaWhSV013NnZlc2lGUFFKckVoV050MnR2TlZmYk1OR2xoM3B2b0VNT0Q1NW9FdXVzT1lSOFhTWDgySmgzT2JTQnNPaUNxMGdlQnhwRitsTDFYeEJJWWJqWWZDV2o4WUxONE83c21WUUNWZFJVVjArZlJzZlcwajFETEVQaG1XeUtFVEpQYWlHK2YzcjlBdTZOcWxtQ21pd0JOdk14Nmw0RktpNjFPUUw1VzRsdVZESmhyaThRZXNkdXFXMGpZZnZwUzRNalgvejAzR21HT0VieEh1bURWdWVxK3puTXUreDNwR3RzcEZUTngxSU9xZmVDSFFEYVFOeTVRNW1CbWppOVhNYU15enVRbTBQVS84c0J1UmpHdjQ4UmJ4M2RJTlpGeC9yakdqcldJeDBHQ3BvOE9HaUF5U05adi9YbXIxRHA4dk1hcXlHNkVMMEo2S1Q2dHg0MFp3YVJvNWx5bUtueWJ6Y3lwOGJ0OU5XNkJ1b2J3Qk9BSEpwYlJwY2ZyYmF2OGVKOXhET2ptQ1hzNk5temltOEdjNVpaQys0dUY3R1FLajNuY1QwNDBlVlRzdGdBS25mY2RuSVB2R3R3K2ozaXUxb2xqN0doazFaSGpUd3FhUC9JaHVNUzBKenlzV0NENWdrMzgvczVncmFlUlNFREdlb29nWWVEcWszKzJhazhVUitNTnlDeUtwbmpsYi83emtJeUp1bzZaaUlwWFA1dHk0dy9CRlhoRUpmYkdHLzN5UHFxY04xQmI4WmtiUmFaYmtHeDJ4SGhhQW9VZzRhbDVERWpqRmhEeWl2NDhZY0p5Rm4ySTFPWkZJd1A0Q01UWDJlTXpPS2dkS2l5UDFDejQ3ZmJaQlBVSnZIQzFhbC9ub3R4Tm1udUxIR2dldUduSGwxS3dFNFJ0Y2QreHBwRFRJQU9wN0RuUm9NTHRpUkhFMGd2RzhaYzBQZ2pMM2hJcmd1aGFuSE5rTEg0ZVZBdEdPSXViLytxNGN4Y0tqeXNua2RhMmtvZ1NTLzVSckw4eGdjdXQzRGRSaGpmVVB2NkloeFV3dmVnRDdGTGQxTXR5eEpBNExFcTk3UkN1V25JN1d6UGhoWURKbW1HVXQ3RXo3aVpUTHFFOE9vTDgrbll5dDVRVE5ReUh2MDZCM29mQ3FtK2pwQlN2MXFKNnduRS93TXJIajNDRTg4WE5MWkZBc1ArVnNiSS9GSHl5cmYrOUJSLzNFS3kyQ3dOMWlMN3FlN3F2c2hUbjJBdHpYK2lXa2ZOMVlOWDVtTlJMVUhFMG1sbjdiOTYxT1ltR21OSFpENDVpbkVxeVB2b2JMcEUwVmlOeTBXY2hySXhPVUtuZkxoZGFhUlpuVVJ4WklWRFJTbXYydWQ3WlZYUmZCcUNiWXlObXNEcUdGSDdsRlJ2ai8vcVZCNWtXWU51STNiODZDc0tMWUJOSlI5UlVyS2IxUUNqSUlFSVlhcTdEcUJXRkZQU1JqSmJ5bEtLM1E1MXJkWEJaQmc0SDR1Mll1Z0VoN29DZFE3MWhybGJBSjlmK3UxOU1vdmN4S3EvY1UvY0Z6TGJMblA1KzBJcVdqQ1N0TnNXTlMzb090NU5qZnZSc3ZONVU5Ynl6Ukl5byt4Q0Z5VlNhOFZtL29aL3JVaExVRVRZejJpME9LQlJCMDhLUE9IVmpPbDhjdEtYb0VSa0lOSEJQOWsvVk96ZTVad1pXa0FIK044ZlRZQlNjM2tYMGdvTFI3ZXkwaXllREJ3aDVpSFhBZDFnQmZPUkVvYlpGbFZhb3NDNlpRVHR3MGtJTUY2UFN1YVExN1p1TjhQRzYrU2h1OGpRajVrU28yUnBMY2h4ZE1UWklRTW82cXByQlVJcWd4eldyOWt1YlpkZDVKSHI4V0czOHU4VzRrYW10a3I5YnhYQmZ4Uk55Y3Ivbldza3lVUWFzd25HMnppUTZ0WGJoUWVlYXkzYkY3QWZWOGZhUlJKK0VNTUFoYjRITUdaV0EwM2lVWFFlOXc9IiwiZGF0YWtleSI6IkFRSUJBSGdmRTJ0c0MrUUNRTCtyMU1Ib3BrUmFUNnFFdkwybW9Ka0hZUDNuaWJaV0RnRkJqK1dkOEZSaE5MK2Vud1YrRWh0N0FBQUFmakI4QmdrcWhraUc5dzBCQndhZ2J6QnRBZ0VBTUdnR0NTcUdTSWIzRFFFSEFUQWVCZ2xnaGtnQlpRTUVBUzR3RVFRTUNZckl3RTU4citJakFsWTJBZ0VRZ0R2TjZtVklzL0UrdmhZQm9OYnVNeENVbkhwWFh0dFFJY1lCWHNqSUtqbE1lLzhRYmtlSVVEY2ZHb2k2QXpFeFJFdFpnYlVFNStmRjdteXNQZz09IiwidmVyc2lvbiI6IjIiLCJ0eXBlIjoiREFUQV9LRVkiLCJleHBpcmF0aW9uIjoxNzQzNzQ0NDEwfQ==~ 730335514161.dkr.ecr.ap-south-2.amazonaws.com
+  105  docker ps
+  106  ll
+    cd my-docker-app/
+   ll
